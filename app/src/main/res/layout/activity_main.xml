@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Categoría seleccionada -->
+        <TextView
+            android:id="@+id/categoria_seleccionada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Tecnologías de la Información"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <!-- Palabra Oculta -->
+        <TextView
+            android:id="@+id/palabraOculta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text=""
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textSize="30sp" />
+
+        <!-- Campo de entrada para la palabra del usuario -->
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:hint="Escribe aquí"
+            android:maxLength="1"
+            android:inputType="text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <!-- Botón de pista -->
+        <Button
+            android:id="@+id/btnPista"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pista"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <!-- Botón para comprobar -->
+        <Button
+            android:id="@+id/btnCheck"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Comprobar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <!-- Botón para reiniciar -->
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <!-- ImageView que cambiará con cada error -->
+        <ImageView
+            android:id="@+id/imageViewAhorcado"
+            android:layout_width="333dp"
+            android:layout_height="326dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ahorcado_01" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
